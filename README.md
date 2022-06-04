@@ -1,16 +1,16 @@
 # ristei
-ristei converts RIS records to TEI bibliographical items, i.e. a sequence of `biblStruct.`
+ristei is a Python script that converts RIS records to TEI bibliographical items.
 
 RIS (Research Information Systems) files, sometimes referred to as RefMan files, contain bibliographical information presented as plain-text lists of key/value pairs. RIS files are commonly offered as one of the bibliography export formats on sites like Google Scholar, JSTOR, ResearchGate, etc.
 
 TEI (Text Encoding Initiative) files are XML files used to represent text (manuscripts, letters, fiction, poetry, etc.) in digital forms. TEI files may contain references to bibliographical items.
 
-ristei converts the content of RIS files into XML sections that can be added to TEI files.
+ristei converts the content of RIS files into XML sections, i.e. a sequence of `biblStruct` elements, that can be added to TEI files.
 
 ## Caveat
-Both RIS and TEI allow for a wide variety of documents to be encoded in their respective formats. ristei focuses on journal articles and books.
+ristei is a small Python 3 script, written for personal purposes. It is easy to use but requires some familiarity with the terminal. I wrote it on macOS Monterey (12.3.1) running Python 3 (3.10.4) and have not tested it in other environments.
 
-ristei is a small Python 3 script, written for personal purposes. Some familiarity with the command line is required.
+Both RIS and TEI allow for a wide variety of documents to be encoded in their respective formats. ristei focuses on journal articles and books.
 
 ## Usage
     ./ristei.py a_file.ris <another_file.ris> <etc.ris>
